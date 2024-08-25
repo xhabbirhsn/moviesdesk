@@ -1,0 +1,16 @@
+.hero-dashboard {
+    /* display: flex; */
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+}
+
+.admin-form {
+    display: flex;
+    border-radius: 2px solid;
+}
+
+.img-generate-btn {
+    border-radius: 2px solid red;
+    cursor: pointer;
+}

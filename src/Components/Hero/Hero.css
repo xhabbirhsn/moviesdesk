@@ -1,0 +1,77 @@
+.hero {
+    padding: 20px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 100%;  
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+}
+
+.main-item-list {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e4e4e7;
+    border-radius: 8px;
+    cursor: pointer;
+    /* padding: 15px; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+}
+
+.main-item-list:hover {
+    transform: translateY(-10px);
+}
+
+.item-content {
+    text-align: center;
+}
+
+.banner {
+    /* border: 5px solid red; */
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.banner-name {
+    /* border: 2px solid green; */
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-button {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.page-button.active {
+    background-color: #2d2d2d;
+    color: white;
+}

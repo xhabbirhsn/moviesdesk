@@ -1,0 +1,169 @@
+.item-details {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 10px;
+    padding: 2rem;
+  }
+
+  h1,p {
+    background-color: #2d2d2d;
+}
+
+  .item-details > h1 {
+    background-color: #2d2d2d;
+    margin-bottom: 5px;
+    size: 20px;
+    padding: 10px;
+    font-weight: 600;
+  }
+
+.list-category  {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #2d2d2d;
+  }
+  
+  .date, .category {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(255 255 255);;
+    color: #000;
+  }
+  
+  .date {
+	background-color: rgb(29 78 216);
+    color: #fff;
+  }
+  
+  .icon {
+    margin-right: 5px;
+  }
+
+  .title-text {
+    margin-top: 10px;
+  }
+  .title-text h3 {
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: center;
+  }
+
+  .movie-img {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #2d2d2d;
+  }
+
+  .movie-details {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d2d2d;
+  }
+
+  .movie-details > h1{
+    font-weight: bolder;   
+    background-color: #2d2d2d;
+    padding: 5px; 
+  }
+  .movie-details h2{
+    background-color: #2d2d2d;
+  }
+  .movie-details > h2{
+    background-color: #2d2d2d;
+  }
+  .movie-details > h2 span{
+    background-color: #2d2d2d;
+  }
+  .movie-details .movie-details-h2 {
+    font-weight: 700;
+  }
+
+  .screenshots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screenshots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 20rem;
+    border: 2px solid red;
+}
+
+.screenshot-image {
+    width: 100%;
+    height: auto;
+}
+
+.download-heading {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2d2d;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.download-heading > h1 {
+    background-color: #2d2d2d;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.download-links-text {
+    font-size: 30px;
+    color: red;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.download-links {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link-item {
+    font-size: 25px;
+    color: blue;
+    font-weight: 700;
+}
+
+.movie-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #2d2d2d;
+}
+
+.movie-description p {
+    color: rgb(203 213 225);
+}
+.movie-story-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #2d2d2d;
+}
+
+.movie-story-line p {
+    color: rgb(203 213 225);
+}
