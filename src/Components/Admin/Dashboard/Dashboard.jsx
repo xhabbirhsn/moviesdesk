@@ -15,6 +15,16 @@ const Dashboard = () => {
   const [releaseDate, setReleaseDate] = useState("");
   const [rating, setRating] = useState("");
   const [overview, setOverview] = useState("");
+  const [director, setDirector] = useState("");
+  const [actor, setActor] = useState("");
+  const [movieAndQualityDes, setMovieAndQualityDes] = useState("");
+  const [movieName, setMovieName] = useState("");
+  const [duration, setDuration] = useState("");
+  const [language, setLanguage] = useState("");
+  const [subtitles, setSubtitles] = useState("");
+  const [size, setSize] = useState("");
+  const [quality, setQuality] = useState("");
+  const [format, setFormat] = useState("");
 
   const handleSubmit = async () => {
     try {
@@ -32,8 +42,10 @@ const Dashboard = () => {
         setGenerateLink(data.data.poster);
         setTitle(data.data.original_title);
         setGenres(data.data.genres.map((item) => item.name));
-        setReleaseDate(data.data.release_date)
-        setOverview(data.data.overview)
+        setReleaseDate(data.data.release_date);
+        setOverview(data.data.overview);
+        setDirector(data.data.hero.director.map((item) => item))
+        setActor(data.data.hero.actor.map((item) => item))
       } else {
         console.error("Error generating URL:", data.message);
       }
@@ -151,7 +163,7 @@ const Dashboard = () => {
               required
             />
 
-<label htmlFor="title">Rating :</label>
+            <label htmlFor="title">Rating :</label>
             <input
               id="Rating"
               className="input"
@@ -162,7 +174,7 @@ const Dashboard = () => {
               required
             />
 
-<label htmlFor="title">Overview :</label>
+            <label htmlFor="title">Overview :</label>
             <input
               id="Overview"
               className="input"
@@ -172,6 +184,108 @@ const Dashboard = () => {
               onChange={(e) => setOverview(e.target.value)}
               required
             />
+
+            <label htmlFor="title">Director :</label>
+            <input
+              id="Director"
+              className="input"
+              type="text"
+              value={director}
+              placeholder="Enter Overview"
+              onChange={(e) => setDirector(e.target.value)}
+              required
+            />
+
+            <label htmlFor="title">Actor :</label>
+            <input
+              id="Actor"
+              className="input"
+              type="text"
+              value={actor}
+              placeholder="Enter Overview"
+              onChange={(e) => setActor(e.target.value)}
+              required
+            />
+          </div>
+          <div className="second-title">
+          <div className="t2">
+            <label htmlFor="t2-1">Enter movie and quality:</label>
+            <input
+              id="t2-1"
+              className="input"
+              type="text"
+              value={movieAndQualityDes}
+              placeholder="Enter movie and quality:"
+              onChange={(e) => setMovieAndQualityDes(e.target.value)}
+              required
+            />
+          </div>
+          <div className="movie-info">
+            <label htmlFor="item-info">Enter details:</label>
+            <input
+              id="item-info"
+              className="input"
+              type="text"
+              value={movieName}
+              placeholder="Enter Full Name"
+              onChange={(e) => setMovieName(e.target.value)}
+              required
+            />
+            <input
+              id="item-info"
+              className="input"
+              type="text"
+              value={duration}
+              placeholder="Enter Duration"
+              onChange={(e) => setDuration(e.target.value)}
+              required
+            />
+            <input
+              id="item-info"
+              className="input"
+              type="text"
+              value={language}
+              placeholder="Enter Language"
+              onChange={(e) => setLanguage(e.target.value)}
+              required
+            />
+            <input
+              id="item-info"
+              className="input"
+              type="text"
+              value={subtitles}
+              placeholder="Enter Subtitles"
+              onChange={(e) => setSubtitles(e.target.value)}
+              required
+            />
+            <input
+              id="item-info"
+              className="input"
+              type="text"
+              value={size}
+              placeholder="Enter Size"
+              onChange={(e) => setSize(e.target.value)}
+              required
+            />
+            <input
+              id="item-info"
+              className="input"
+              type="text"
+              value={quality}
+              placeholder="Enter Quality:"
+              onChange={(e) => setQuality(e.target.value)}
+              required
+            />
+            <input
+              id="item-info"
+              className="input"
+              type="text"
+              value={format}
+              placeholder="Enter Format"
+              onChange={(e) => setFormat(e.target.value)}
+              required
+            />
+          </div>
           </div>
         </div>
       </div>
