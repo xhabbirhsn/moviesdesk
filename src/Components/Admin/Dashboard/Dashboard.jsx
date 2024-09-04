@@ -337,7 +337,7 @@ const Dashboard = () => {
               <div className="one-all-card">
                 <label htmlFor="title">Actor :</label>
                 <input
-                  id="Actor"
+                  id="actor"
                   className="input"
                   type="text"
                   value={actor}
